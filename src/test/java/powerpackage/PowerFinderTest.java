@@ -1,12 +1,11 @@
 package powerpackage;
 
-
-import org.junit.Test;
+import junit.framework.TestCase;
 import org.junit.Before;
+import org.junit.Test;
 
-public class PowerTest {
+public class PowerFinderTest extends TestCase {
     private PowerFinder powerFinder;
-
     @Before
     public void setup(){
         powerFinder = new PowerFinder();
@@ -29,6 +28,7 @@ public class PowerTest {
 
     @Test
     public void testThreeRaisedToTwoIsNine() {
-        assert powerFinder.getPower(3, 2) == 3*3;
+        assert powerFinder.getPower(3, 2) == 9;
     }
+
 }
